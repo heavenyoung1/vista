@@ -4,12 +4,14 @@ from pydantic import BaseModel, ConfigDict
 class RecordCreate(BaseModel):
     name: str
     description: str
+    status: bool = False
 
     model_config = ConfigDict(
         json_schema_extra={
             'example': {
                 'name': 'Sample Record',
                 'description': 'Some description',
+                'status': True,
             }
         }
     )
