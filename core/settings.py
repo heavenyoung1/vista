@@ -9,7 +9,6 @@ class Settings(BaseSettings):
 
     PROJECT_NAME: str = 'Vista - Record Creater'
     DEBUG: bool = True
-    APP_VERSION: str
 
     # === PostgreSQL параметры ===
     DB_HOST: str = 'localhost'
